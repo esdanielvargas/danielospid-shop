@@ -1,75 +1,28 @@
-# React + TypeScript + Vite
+# Daniel Ospid | Official Shop 🎵
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el código fuente de la tienda oficial de **Daniel Ospid**. Es un proyecto privado desarrollado con el fin de centralizar la música, el merchandising y la identidad digital del artista bajo una infraestructura tecnológica moderna y personalizada.
 
-Currently, two official plugins are available:
+> **⚠️ AVISO DE PROPIEDAD INTELECTUAL:** El código, diseño y activos visuales contenidos en este repositorio son propiedad exclusiva de Daniel Vargas (Daniel Ospid). Este respaldo tiene un propósito estrictamente personal y de control de versiones. **No se autoriza la clonación, distribución, modificación o uso comercial de este software por parte de terceros.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## 🛠️ Stack Tecnológico
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+ El desarrollo se enfoca en la robustez y el rendimiento, utilizando herramientas de última generación:
 
-Note: This will impact Vite dev & build performances.
+* **Core**: React 19 + Vite + TypeScript para una base sólida y tipada.
+* **Estilos**: Tailwind CSS (v4) bajo un concepto de diseño industrial y minimalista.
+* **Interactividad**: Motion (`motion/react`) para micro-interacciones premium en los componentes globales.
+* **Backend**: Integración con Firebase (Firestore) para la gestión dinámica de datos en tiempo real.
 
-## Expanding the ESLint configuration
+## 🚀 Implementaciones Destacadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **Arquitectura de Alias**: Configuración de rutas `@/` para un mantenimiento de código profesional.
+* **Real-time Notices**: Sistema de anuncios dinámicos en el `TopBar` sincronizados con la base de datos.
+* **Experiencia Adaptive**: Interfaz inteligente que reacciona dinámicamente al comportamiento de scroll del usuario.
+* **Modularidad Estricta**: Organización basada en *Barrel Patterns* para optimizar las exportaciones de componentes.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✒️ Autoría y Respaldo
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Todo el sistema ha sido diseñado, programado y pulido por **Daniel Vargas**.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**© 2026 DANIEL OSPID. Est. 2021.**
